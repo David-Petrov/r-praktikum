@@ -133,7 +133,7 @@ frequencies <- sapply(sample_sizes, sim.trials)
 barplot(frequencies, xlab = "Големина на извадката (n)", ylab = "Честота на вярно заключение", main = "Хистограма на честотите", names.arg = sample_sizes, ylim = c(0, 1))
 
 # Допълнителна команда за извеждане на точните честоти над колоните на хистограмата
-text(x = 1:length(sample_sizes), y = frequencies, labels = round(frequencies, 3), pos = 3, cex = 0.8)
+text(x = barplot(frequencies, plot = FALSE), y = frequencies, labels = round(frequencies, 3), pos = 3, cex = 0.8)
 ```
 
 
@@ -183,7 +183,7 @@ frequencies <- sapply(sample_sizes, sim.trials)
 barplot(frequencies, xlab = "Големина на извадката (n)", ylab = "Честота на вярно заключение", main = "Хистограма на честотите", names.arg = sample_sizes, ylim = c(0, 1.2))
 
 # Допълнителна команда за извеждане на точните честоти над колоните на хистограмата
-text(x = 1:length(sample_sizes), y = frequencies, labels = round(frequencies, 3), pos = 3, cex = 0.8)
+text(x = barplot(frequencies, plot = FALSE), y = frequencies, labels = round(frequencies, 3), pos = 3, cex = 0.8)
 ```
 
 
